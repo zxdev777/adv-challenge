@@ -13,7 +13,6 @@ import java.util.Set;
 @RestController
 public class AdvertisementController {
 
-
     @Autowired
     private AdvertisementService advService;
 
@@ -22,8 +21,8 @@ public class AdvertisementController {
 
     @GetMapping(path = "/advertisements", produces = "application/json")
     public List<AdvertisementPerformance> listAdvertisements(
-            @RequestParam(name="datasources", required=false, defaultValue="") Set<String> datasources,
-            @RequestParam(name="campaigns", required=false, defaultValue="") Set<String> campaigns) {
+            @RequestParam(name = "datasources", required = false, defaultValue = "") Set<String> datasources,
+            @RequestParam(name = "campaigns", required = false, defaultValue = "") Set<String> campaigns) {
 
         return advService.listAdvertisementPerformances(datasources, campaigns);
     }

@@ -1,6 +1,5 @@
 package com.adv.advchallenge.advertising;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;

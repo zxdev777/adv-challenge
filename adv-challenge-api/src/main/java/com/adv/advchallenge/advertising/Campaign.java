@@ -1,6 +1,5 @@
 package com.adv.advchallenge.advertising;
 
-
 import java.io.Serializable;
 
 public class Campaign implements Serializable {
