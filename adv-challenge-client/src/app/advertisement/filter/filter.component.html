@@ -1,0 +1,22 @@
+
+<div> Datasources:</div>
+<ng-select [items]="datasources$ | async"
+           bindLabel="text"
+           [(ngModel)]="selectedDatasources"
+           [addTag]="false"
+           [multiple]="true"
+           id="id"
+           [loading]="datasourcesLoading"
+           [typeahead]="datasourcesInput$">
+</ng-select>
+
+<div> Campaigns:</div>
+<ng-select [items]="campaigns$ | async"
+           bindLabel="text"
+           [(ngModel)]="selectedCampaigns"
+           [addTag]="false"
+           [multiple]="true"
+           id="id"
+           [loading]="campaignsLoading"
+           [typeahead]="campaignsInput$">
+</ng-select>

@@ -1,0 +1,19 @@
+<div style="padding: 10px">
+  <div class="row">
+    <div class="col-4">
+
+      <app-filter #filter></app-filter>
+    </div>
+
+    <div class="col-1">
+      <button class="btn btn-primary" type="submit" (click)="searchAdvertisements()">Apply filter</button>
+    </div>
+    <div class="col-7">
+      <app-chart [advertisements]="advertisements" #chart></app-chart>
+    </div>
+  </div>
+
+</div>
+
+
+
